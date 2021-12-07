@@ -36,7 +36,7 @@
                         </ul>
                     </div>
 
-                    <div class="hamburger-menu">
+                    <div class="hamburger-menu noshow">
                         <div class="bar">
 
                         </div>
@@ -82,7 +82,7 @@
                                     We Design beautiful UX and layouts that are both 
                                     functional and eye grabbing. 
                                 </p>
-                                <a href="#" class="btn small">Read More</a>
+                                <!-- <a href="#" class="btn small">Read More</a> -->
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                                    We take the guess work of building functional and beautiful
                                    apps for Andriod and iOs. 
                                 </p>
-                                <a href="#" class="btn small">Read More</a>
+                                <!-- <a href="#" class="btn small">Read More</a> -->
                             </div>
                         </div>
                     </div>
@@ -116,7 +116,7 @@
                                     We understand that Web Development is hard, but we are are to 
                                     figure out the hard part.  
                                 </p>
-                                <a href="#" class="btn small">Read More</a>
+                                <!-- <a href="#" class="btn small">Read More</a> -->
                             </div>
                         </div>
                     </div>
@@ -387,21 +387,27 @@
                     </div>
                     </div>
                     <div class="contact-form">
-                        <h3 class="title">Contact Me</h3>
-                        <div class="row">
-                            <input type="text" name="firstname" id="" class="contact-input" placeholder="First Name">
-                            <input type="text" name="lastname" id="" class="contact-input" placeholder="Last Name">
-                        </div>
-                        <div class="row">
-                            <input type="tel" name="phonenumber" id="" class="contact-input" placeholder="(XXX)-XXX-XXXX">
-                            <input type="email" name="email" id="" class="contact-input" placeholder="Email">
-                        </div>
-
-                        <div class="row">
-                            <textarea name="message" id="" cols="30" rows="10" class="contact-input textarea" placeholder="Message"></textarea>
-                        </div>
-
-                        <a href="#" class="btn">Send</a>
+                        <form action="https://formsubmit.co/tywaynebuchanan@gmail.com" method = "POST">
+                            <h3 class="title">Contact Me</h3>
+                            <div class="row">
+                                <input type="text" name="firstname" id="" class="contact-input" placeholder="First Name" required>
+                                <input type="text" name="lastname" id="" class="contact-input" placeholder="Last Name" required>
+                            </div>
+                            <div class="row">
+                                <input type="tel" name="phonenumber" id="" class="contact-input" placeholder="(XXX)-XXX-XXXX">
+                                <input type="email" name="email" id="" class="contact-input" placeholder="Email" required>
+                            </div>
+    
+                            <div class="row">
+                                <textarea name="message" id="" cols="30" rows="10" class="contact-input textarea" placeholder="Message" required></textarea>
+                            </div>
+                            <input type="hidden" name="_next" value="https://wheelchairapp.online/tywaynebuchanan/thankyou.html">
+                            <input type="hidden" name="_subject" value="New Inquiry">
+                            <input type="hidden" name="_cc" value="staubin1986@gmail.com">
+                            <input type="submit" class = "btn submit" id ="btn" value="Send">
+        
+                        </form>
+                       
                     </div>
                 </div>
             </div>
@@ -415,7 +421,7 @@
                 <p class="text">
                     In the word impossible, there is possible. We make the impossible possible. 
                 </p>
-                <a href="#" class="btn">Hire Me</a>
+                <a href="#contact" class="btn">Hire Me</a>
             </div>
         </section>
     </main>

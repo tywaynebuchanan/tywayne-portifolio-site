@@ -84,6 +84,7 @@ img {
 .section
 {
     padding: 5rem 0;
+    overflow: hidden;
 }
 
 
@@ -215,6 +216,7 @@ nav .container
     border-radius: 3px;
     background-color: var(--dark-one);
     transition: 0.5s;
+    display: none;
 }
 
 .bar:before, .bar:after 
@@ -246,6 +248,13 @@ nav .container
     font-weight: 500;
     text-transform: uppercase;
     transition: 0.3s;
+}
+
+.submit 
+{
+    outline:none;
+    border: none;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -696,6 +705,10 @@ header .points1
 
 /* Contact Section */
 
+.showform
+{
+    display: block;
+}
 .contact 
 {
     position: relative;
